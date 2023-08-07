@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>proyecto</title>
+
+    
+</head>
+    <bottom ></bottom>
+    <imput></imput>
+    <style>
+        body{ 
+            background-color: rgb(187, 181, 181);
+        }
+        #tabla{
+        width: 35%; 
+        background-color: rgb(46, 45, 45); 
+        height: 50vh;
+         }
+         #tabla2{
+        width: 100%; 
+        background-color: rgb(46, 45, 45); 
+        height: 50px;
+         }
+         .Detalles{
+          background-attachment: fixed;
+            background-color: black;
+            color: white;
+         }
+        h2{
+         text-align: left;
+         background-color: black;
+          }
+        td{
+        text-align: left;
+        color: rgb(255, 255, 255);
+        width: 100px;
+         }
+         tr{
+            color: azure;
+            width: 100px;
+         }
+         h1{
+          background-color: black;
+          color:white;
+         }
+
+         #cuadro_cotizacion{
+          position:relative;
+          right: -700px;
+          top: -550px;
+          width: 500px;
+         }        
+    </style>
+
+
+<body>
+    <h1 >tansformador de divisas</h1>
+
+        <label  > Yo tengo </label>
+        <select name="" id="Moneda_i">
+            <option value = "peso">$</option>
+            <option value = "dolar">US$</option>
+            <option value = "euro">€</option>  
+        </select> 
+        <label for=""></label>
+        <input type = "number" id = "Monto">
+
+        <label> y eso equivale a  </label>
+        <select id="Moneda_f">
+            <option value = "peso">$</option>
+            <option value = "dolar">US$</option>
+            <option value = "euro">€</option>
+        </select> 
+        <ul id = "resultado"></ul>
+        <br>
+        <br>
+        <button onclick="convertir()"> convertir </button> 
+
+
+    <div  id="tabla">
+        <h2><button class="Detalles">Converciones</button></h2>
+        <table>
+          <thead>
+            <tr>
+              <td id ="Valor_i">Valor i</td>             
+              <td id = "Valor">Valor f</td>
+              <td id = "mi">moneda i</td>
+              <td id = "mf">moneda f</td>
+              <td id = "conveniente">Tipo de cambio</td>
+              <td id="btn"> </td>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+
+      </div>
+      <br>
+      <br>
+      <button onclick="recuperar()">recuperar</button>
+
+      <div id="cuadro_cotizacion">
+
+      </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>  
+  
+
+    <script src="proyecto.js"></script>
+</body>
+</html>
